@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Missing slice</title>
+    <style>
+        * {
+            margin: 0%;
+            padding: 0%;
+
+        }
+
+        .container {
+            background-color: #E3516E;
+            width: 400px;
+            height: 300px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .shape1{
+            background-color: #51B5A9;
+            height: 100px;
+            width: 100px;
+            border-top-left-radius: 100%;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            position: absolute; top: 50px; left: 100px;
+        }
+
+        .shape2{
+            background-color: #FADE8B;
+            height: 100px;
+            width: 100px;
+            border-top-right-radius: 100%;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            position: absolute; top: 50px; left: 200px;
+        }
+        .shape3{
+            background-color: #F7F3D7;
+            height: 100px;
+            width: 100px;
+            border-bottom-left-radius: 100%;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            position: absolute; top: 150px; left: 100px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="shape1"></div>
+        <div class="shape2"></div>
+        <div class="shape3"></div>
+    </div>
+
+</body>
+
+</html>

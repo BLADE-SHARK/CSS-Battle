@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>wiggly moustache</title>
+    <style>
+        .container {
+            height: 300px;
+            width: 400px;
+            background: #F5D6B4;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+        }
+
+
+        div {
+            border: 1.25rem solid #F5D6B4;
+            border-bottom: 0px;
+            border-top-left-radius: 110px;
+            border-top-right-radius: 110px;
+            margin-top: -42px;
+            width: 60px;
+            height: 38px;
+            background: #F5D6B4;
+            position: relative;
+        }
+
+        div::after {
+            content: "";
+            border: 1.25rem solid #D86F45;
+            border-top: 0px;
+            border-bottom-left-radius: 110px;
+            border-bottom-right-radius: 110px;
+            margin-top: 1.6rem;
+            position: absolute;
+            top: 8.5rem;
+            right: 6.2rem;
+            width: 60px;
+            height: 35px;
+            background: #F5D6B4;
+            
+
+        }
+
+        div::before {
+            content: "";
+            border: 1.25rem solid #D86F45;
+            border-top: 0px;
+            border-bottom-left-radius: 110px;
+            border-bottom-right-radius: 110px;
+            margin-top: 1.6rem;
+            position: absolute;
+            left: 2.6rem;
+            top: 8.5rem;
+            width: 60px;
+            height: 35px;
+            background: #F5D6B4;
+            
+        }
+        .cover{
+            background-color: #F5D6B4;
+            height: 100px;
+            width: 100px;
+            position: absolute;
+            top: 125px;
+            left: 150px;
+            z-index: 2;
+        }
+
+        .top {
+            background-color: #D86F45;
+            height: 100px;
+            width: 100px;
+            border-radius: 50%;
+            position: absolute;
+            top: 100px;
+            left: 150px;
+            z-index: 1;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container"></div>
+    <!-- <div class="cover"></div>
+    <div class="top"></div> -->
+
+</body>
+
+</html>

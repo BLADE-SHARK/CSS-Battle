@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>acid rain</title>
+    <style>
+    *{
+        margin: 0%;
+        padding: 0%;
+
+    }
+    .container{
+    background-color: #0B2429;
+    width: 400px;
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;        
+    }
+
+    .shape1{
+        background-color: #F3AC3C;
+        height: 120px;
+        width: 120px;
+        border-radius: 100% 100% 100% 100%;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        position: absolute; top: 30px; left: 200px;
+        z-index: 1;
+    }
+    
+    .shape2{
+        background-color: #998235;
+        height: 120px;
+        width: 120px;
+        border-radius: 100% 0% 100% 100%;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        position: absolute; top: 90px; left: 140px;
+        z-index: 2;
+    }
+
+    .shape3{
+        background-color: #F3AC3C;
+        height: 120px;
+        width: 120px;
+        border-radius: 100% 0% 100% 100%;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        position: absolute; top: 150px; left: 80px;
+        z-index: 3;
+    }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="shape1"></div>
+        <div class="shape2"></div>
+        <div class="shape3"></div>
+    </div>    
+</body>
+</html>
